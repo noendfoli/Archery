@@ -5,8 +5,7 @@ import datetime
 
 from common.utils.aliyun_sdk import Aliyun
 from .models import AliyunRdsConfig
-
-
+# 获取SQL慢日志统计
 # 获取SQL慢日志统计
 def slowquery_review(request):
     instance_name = request.POST.get('instance_name')
